@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tech doc</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="nav-section">
+      <nav id="navbar">
+        <header class="nav-header">
+          <div class="nav-links">
+            <a href="#" class="nav-link" id="head-nav">APP API Document</a>
+            <a class="nav-link" id="Getting_Started_Guide" href="#section1"
+              >Getting Started Guide</a
+            >
+            <a class="nav-link" id="API_Reference" href="#section2"
+              >API Reference</a
+            >
+            <a class="nav-link" id="Tutorials" href="#section3"
+              >Advance Features</a
+            >
+            <a class="nav-link" id="Trouble_Shooting" href="#section4"
+              >Trouble Shooting</a
+            >
+            <a class="nav-link" id="Community_and_Resources" href="#section5"
+              >Community And Resources</a
+            >
+            <a class="nav-link" href="">filler 1</a>
+            <a class="nav-link" href="">filler 2</a>
+            <a class="nav-link" href="">filler 3</a>
+            <a class="nav-link" href="">filler 4</a>
+            <a class="nav-link" href="">filler 5</a>
+            <a class="nav-link" id="trying" href="">filler 6</a>
+          </div>
+        </header>
+      </nav>
+    </section>
+    <header></header>
+    <main id="main-doc">
+      <section class="main-section" id="section1">
+        <header><h1 class="heading-word">Getting Started Guide</h1></header>
+        <p>
+          A step-by-step guide to help users get up and running with your
+          software or API quickly. Include installation instructions, system
+          requirements, and any prerequisites
+        </p>
+        <h3>
+          step (1). To begin using FictionalApp,
+          <p>follow these installation steps:</p>
+        </h3>
+        <ul class="list-1">
+          <li class="listed">
+            Download: Visit our official website at
+            <a href="">www.APPName.com</a> and navigate to the downloads
+            section.
+          </li>
+          <li class="listed">
+            Choose Your Platform: Select the appropriate installer for your
+            operating system (Windows, macOS, Linux).
+          </li>
+          <li class="listed">
+            Install: Run the installer and follow the on-screen instructions to
+            complete the installation process.
+          </li>
+        </ul>
+        <img class="imgs" src="assets/img/img1.png" alt="" />
+        <h3>step (2). Quick Start Tutorial</h3>
+        <p>
+          Now that you're set up, lets dive into a quick tutorial to familiarize
+          yourself with our Apps Core Features!
+        </p>
+        <ul>
+          <li>
+            <span class="bold">Explore the interface!</span> take a moment to
+            navigate through the main dashboard and familiarize yourself with
+            the layout.
+          </li>
+          <li>
+            <span class="bold"
+              >Basic Operations: follow the tutorial prompts to perform basic
+              operations such as creating new folder, uploading files, or
+              accessing key functionalities</span
+            >
+          </li>
+          <li>
+            <span class="bold">You can also: </span>check out our
+            <a href="">tutorial series</a>
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="API_Reference">
+        <header><h1>API Reference</h1></header>
+        <p>
+          <span class="bold">Welcome: to the App API Reference.</span>This
+          section provides detailed documentation on all available endpoints,
+          request/response formats, authentication methods, and more. Whether
+          you're integrating App's API into your application or exploring its
+          capabilities, this guide will help you navigate and leverage our API
+          effectively
+        </p>
+        <h4 class="tiny-heading">Authentication</h4>
+        <p>
+          <span class="bold">App Name </span>API uses OAuth 2.0 for
+          authentication. to authenticate API requests, you will need to obtain
+          an access token by following these steps
+        </p>
+        <ol>
+          <li>
+            <span class="bold">Register Your Application: </span>Log in to your
+            AppName account and register your application to obtain client
+            credentials
+          </li>
+          <li>
+            <span class="bold">Obtain Access Token: </span>Use client
+            credentials to obtain an access token via OAuth 2.0 authentication
+            flow
+          </li>
+        </ol>
+        <img class="imgs" src="assets/img/img2.png" alt="" />
+        <h4>Endpoints</h4>
+        <h4>Projects</h4>
+        <p>
+          <span class="bold">Base URL:</span
+          >`https://api.AppName.com/v1/projects`
+        </p>
+        <ul>
+          <li>
+            <span class="bold">GET /projects: </span>Retrieve a list of all
+            projects
+          </li>
+          <li>
+            <span class="bold">POST /projects: </span>Create a new project.
+            Required parameters: `name`, `description`.
+          </li>
+          <li>
+            <span class="bold">GET /projects/{project_id}: </span>Retrieve
+            details of a specified project
+          </li>
+          <li>
+            <span class="bold">PUT /projects/{project_id}: </span>Update an
+            existing project
+          </li>
+          <li>
+            <span class="bold">DELETE /projects/{project_id}: </span>Delete a
+            project
+          </li>
+        </ul>
+        <h4>Files</h4>
+        <ul>
+          <li>
+            <span class="bold">GET /files: </span>Retrieve a list of all
+            projects
+          </li>
+          <li>
+            <span class="bold">POST /files: </span>Create a new file. Required
+            parameters: `name`, `description`.
+          </li>
+          <li>
+            <span class="bold">GET /files/{file_id}: </span>Retrieve details of
+            a specified file
+          </li>
+          <li>
+            <span class="bold">PUT /files/{file_id}: </span>Update an existing
+            file
+          </li>
+          <li>
+            <span class="bold">DELETE /files/{file_id}: </span>Delete a file
+          </li>
+        </ul>
+        <h3>Request and Response Formats</h3>
+        <p>
+          All API requests and response are formatted in JSON. Here's an example
+          of a request to create a new project:
+        </p>
+        <code
+          >Post /v1/projects { "name": "new Project", "description": "A brief
+          description of the project"}
+        </code>
+        <p>And the corresponding response:</p>
+        <code>
+          { "id": 12345, "name": "New Project", "description": "A brief
+          description of the project" "created_at": "2024-24-24T12:00:00Z"
+          "updated_at": "2024-24-24T12:00:00Z" }
+        </code>
+      </section>
+      <section class="main-section" id="section3" id="Advanced_Features">
+        <header><h1>Advance Features</h1></header>
+        <p>
+          Explore advanced features of <b>APPName</b> to maximize productivity
+          and efficiency
+        </p>
+        <ul>
+          <li>
+            <span class="bold">Advance Analytics: </span>Leveraging analytics
+            tools within <b>APPName</b> to gain insights into project
+            performance and user engagement
+          </li>
+          <li>
+            <span class="bold">Custom Plugins: </span>Creating and integrating
+            custom plugins to extend APPName's functionality according to
+            specific needs.
+          </li>
+          <li>
+            <span class="bold">Workflow Automation: </span>Using automation
+            features to automate repetitive tasks and streamline workflows
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="section4">
+        <header><h1>Troubleshooting</h1></header>
+        <p>
+          Encountering issues while using <span>APPName?</span> This
+          troubleshooting guide provides solutions to common problems and helps
+          you resolve issues fast.Follow these steps to troubleshoot and resolve
+          issues effectively
+        </p>
+        <p>1. Connectivity Issues</p>
+        <p>
+          <span class="bold">Problem: </span>Unable to connect to <b>APPName</b>
+          servers or experiencing intermittent connectivity
+        </p>
+        <h5>Solution</h5>
+        <ul>
+          <li>
+            <span class="bold">Check Internet Connection: </span>Ensure you have
+            a stable internet connection. Try accessing other websites or
+            services to verify internet connectivity
+          </li>
+          <li>
+            <span class="bold">Firewall Settings: </span>Verify that your
+            firewall or network settings are not blocking APPName's access.
+            Adjust firewall rules if necessary to allow <b>APPName</b> through
+          </li>
+        </ul>
+        <h4>2. Performance Issues</h4>
+        <p>
+          <span class="bold">Problem: </span><b>APPName</b> is running slowly or
+          freezing during use.
+        </p>
+        <h5>Solution:</h5>
+        <ul>
+          <li>
+            <span class="bold">System Requirements: </span>Check if your
+            computer meets the minimum system requirements for <b>APPName</b>.
+            Ensure you are using you have sufficient RAM and processing power.
+          </li>
+          <li>
+            <span class="bold">Clear Cache: </span>Clear your browser cache or
+            local storage within <b>APPName</b> to improve performance.
+          </li>
+          <li>
+            <span class="bold">Update Software: </span>Ensure you are using the
+            latest version of
+            <p>APPName</p>
+            as updates often include performance improvements.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="section5">
+        <header><h1>Community and Resources</h1></header>
+        <p>
+          Welcome to the APPName community and resources section! Connect with
+          other users, access additional resources, and stay updated on the
+          latest news and developments
+        </p>
+        <h4><b>1. Community Forums</b></h4>
+        <p>
+          Join our vibrant community forums to engage with other
+          <b>APPName </b>users, share experiences, ask questions, and provide
+          feedback. It's a great place to:
+        </p>
+        <ul>
+          <li>
+            <b>Discuss Features: </b>Share tips and tricks, discuss feature
+            requests, and learn from other user experiences.
+          </li>
+          <li>
+            <b>Troubleshoot Together: </b>Get assistance with troubleshooting
+            issues or technical challenges from fellow community members.
+          </li>
+          <li>
+            <b>Network and Collaborate: </b>Connect with like=minded
+            professionals and potential collaborators who use <b>APPName</b>
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="section6">
+        <h1>Best Practices</h1>
+        <p>
+          Optimize your experience with <b>APPName </b>by following these best
+          practices to enhance security, performance, and efficiency
+        </p>
+        <h4><b>1. Data Organization</b></h4>
+        <p>
+          Efficient data organization is key to maximizing productivity within
+          <b>APPName</b>
+        </p>
+        <ul>
+          <li>
+            <b>Project Structure: </b>Establish a clear and consistent project
+            structure to facilitate collaboration and streamline workflows.
+          </li>
+          <li>
+            <b>Naming Conventions: </b>Adopt standardized naming conventions for
+            projects, files, and folders to improve searchability and
+            organization
+          </li>
+          <li>
+            <b>Tagging and Metadata: </b>Utilize tags and metadata to categorize
+            and classify data, making it easier to retrieve and manage
+            information.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
