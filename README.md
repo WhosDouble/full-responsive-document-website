@@ -10,6 +10,12 @@
   <li>HTML</li>
   <li>CSS</li>
 </ul>
+<h3>Recently Added</h3>
+<ul>
+  <li>reactive icons🔴</li>
+  <li>more pages📰</li>
+  <li>contact section📞</li>
+</ul>
 <hr>
 <h2>More will be added soon</h2>
 <ul>
