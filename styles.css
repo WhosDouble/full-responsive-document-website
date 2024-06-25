@@ -30,7 +30,7 @@ body a:hover {
 .imgs {
   margin-bottom: 20px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 25px;
   width: 100%;
   max-width: 1300px;
   object-fit: contain;
