@@ -9,6 +9,7 @@
 <ul>
   <li>HTML</li>
   <li>CSS</li>
+  <li>JavaScript</li>
 </ul>
 <h3>Recently Added</h3>
 <ul>
