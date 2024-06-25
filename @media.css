@@ -37,6 +37,9 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .Getting_Started_Guide {
+    font-size: 25px;
+  }
   .imgs {
     height: 200px;
     width: 100%;
@@ -165,6 +168,7 @@
     height: 20%;
     display: flex;
     flex-direction: row;
+    overflow: scroll;
     float: none;
     padding: 0;
     margin: 0;
@@ -182,9 +186,11 @@
   .nav-links {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     text-align: center;
-    font-size: 10px;
+    font-size: 19px;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
   }
   .nav-link {
     padding: 5px;
@@ -194,12 +200,20 @@
     flex-wrap: wrap;
     width: 30px;
   }
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
   .imgs {
-    height: 200px;
     width: 100%;
+    height: 200px;
   }
   .main-section {
     margin: 35px;
+    padding: 0;
+    margin: 0;
+  }
+  .section2 {
     padding: 0;
     margin: 0;
   }
@@ -225,15 +239,26 @@
     margin: 0;
   }
   p {
-    text-align: left;
-    font-size: 10px;
+    text-align: center;
+    font-size: 15px;
     margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+  }
+  .api-ref-p {
+    text-align: center;
     padding: 0;
   }
   h1 {
-    text-align: left;
+    text-align: center;
     font-size: 35px;
     padding: 0;
+  }
+  h3 {
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
   }
 }
 
