@@ -9,7 +9,6 @@
   margin-right: 40px;
   background: #31363f;
 }
-
 .nav-section a {
   color: #76abae;
   text-decoration: none;
@@ -35,7 +34,11 @@
   font-size: 20px;
   background: #2d3139;
 }
+.Getting_Started_Guide {
+  font-size: 35px;
+}
 
+/*the styling for the first main content section*/
 #main-doc {
   display: flex;
   flex-direction: column;
@@ -44,8 +47,6 @@
   padding: 20px;
   background: #222831;
 }
-
-/*the styling for the first main content section*/
 .heading-word {
   padding: 20px;
 }
