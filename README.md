@@ -16,6 +16,8 @@
   <li>reactive icons🔴</li>
   <li>more pages📰</li>
   <li>contact section📞</li>
+  <li>scrollable navbar for mobile view</li>
+  <li>better mobile view</li>
 </ul>
 <hr>
 <h2>More will be added soon</h2>
