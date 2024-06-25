@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap");
+/*the all selector appling 0 margin and 0 padding to the whole file*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+/*selectors that are targeting all of a class or element*/
+body li {
+  padding: 2rem;
+  color: #ababab;
+}
+body p {
+  padding: 0.7rem;
+  color: #ababab;
+}
+body {
+  color: #eeeeee;
+}
+body b {
+  color: #76abae;
+}
+body a {
+  color: #76abae;
+}
+body a:hover {
+  color: #06398a;
+}
+.imgs {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 1300px;
+  object-fit: contain;
+}
+code {
+  background: #bdbdbd;
+  padding: 6px;
+  border-radius: 5px;
+}
+/*adding a smooth scroll animation when a link from the navbar is clicked*/
+html {
+  scroll-behavior: smooth;
+}
