@@ -24,3 +24,9 @@
   <li>Theme selector</li>
   <li>more custom information elements</li>
 </ul>
+<h2>Main Contributor</h2>
+<h3>SirRango/Whosdouble</h3>
+<hr>
+<h2>other contributors</h2>
+<h3></h3>
+
