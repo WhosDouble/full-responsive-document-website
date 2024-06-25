@@ -16,7 +16,7 @@ body p {
   color: #ababab;
 }
 body {
-  color: #fff;
+  color: #eeeeee;
 }
 body b {
   color: #76abae;
@@ -113,6 +113,74 @@ html {
 }
 .main-headers {
   font-size: 40px;
+}
+
+/*the styling for the contact section*/
+.bottom-border {
+  border-bottom: 2px solid #eeeeee;
+}
+
+/*the styling the icons for contact section*/
+.contact-icons {
+  display: flex;
+  position: relative;
+  top: -30px;
+  bottom: 0px;
+  left: 33px;
+  gap: 10px;
+  cursor: pointer;
+}
+.contact-icons a {
+  color: #eeeeee;
+}
+#r-twitter {
+  font-size: 30px;
+  transition: 0.3s;
+}
+#r-discord {
+  font-size: 30px;
+  transition: 0.3s;
+}
+#r-email {
+  font-size: 30px;
+  transition: 0.3s;
+}
+#r-github {
+  font-size: 30px;
+  transition: 0.3s;
+}
+#r-linkin {
+  font-size: 30px;
+  transition: 0.3s;
+}
+#r-linkin:hover {
+  transform: scale(115%);
+  background: #0077b5;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#r-twitter:hover {
+  transform: scale(115%);
+  transition: 0.3s;
+  color: #1da1f2;
+}
+#r-discord:hover {
+  transform: scale(115%);
+  background: #5865f2;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#r-email:hover {
+  transform: scale(115%);
+  background: #973131;
+  border-radius: 5px;
+  color: #eeeeee;
+  transition: 0.3s;
+}
+#r-github:hover {
+  transform: scale(115%);
+  transition: 0.3s;
+  color: #eeeeee;
 }
 
 /*this is aplling styling to all elements with the bold class*/
