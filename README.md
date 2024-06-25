@@ -3,4 +3,4 @@
 <hr>
 <img src="pic1.png" alt="a mobile viewof the website">
 <hr>
-<img src="Screenshot 2024-06-24 2219135.png" alt="">
+<img src="pic2.png" alt="full website view of the app">
