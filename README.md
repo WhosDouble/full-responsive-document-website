@@ -2,6 +2,7 @@
 <p>this is a responsive app document page for mobile📱, tablet, and desktop💻</p>
 <hr>
 <img src="pic3.png" alt="a mobile view of the website">
+<p>mobile view of the page</p>
 <hr>
 <img src="pic2.png" alt="full website view of the app">
 <p>nav bar menu with smooth scroll animations</p><br>
